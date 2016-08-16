@@ -25,49 +25,96 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 
-        .state('app', {
+    .state('app', {
         url: '/app',
         abstract: true,
         templateUrl: 'templates/menu.html',
-        controller: 'AppCtrl'
+        controller: 'MenuCtrl'
     })
 
-    .state('app.search', {
-        url: '/search',
+    .state('app.home', {
+        url: '/home',
         views: {
             'menuContent': {
-                templateUrl: 'templates/search.html'
+                templateUrl: 'templates/home.html'
             }
         }
     })
 
-    .state('app.browse', {
-            url: '/browse',
-            views: {
-                'menuContent': {
-                    templateUrl: 'templates/browse.html'
-                }
-            }
-        })
-        .state('app.playlists', {
-            url: '/playlists',
-            views: {
-                'menuContent': {
-                    templateUrl: 'templates/playlists.html',
-                    controller: 'PlaylistsCtrl'
-                }
-            }
-        })
-
-    .state('app.single', {
-        url: '/playlists/:playlistId',
+    .state('app.sobre', {
+        url: '/sobre',
         views: {
             'menuContent': {
-                templateUrl: 'templates/playlist.html',
-                controller: 'PlaylistCtrl'
+                templateUrl: 'templates/sobre.html',
+                controller: 'SobreCtrl'
+            }
+        }
+    })
+
+    .state('app.sobreHa', {
+        url: '/sobreHa',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/sobreHa.html'
+            }
+        }
+    })
+
+    .state('app.conselharia', {
+        url: '/sobreHa/conselharia',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/conselharia.html',
+                controller: 'ConselhariaCtrl'
+            }
+        }
+    })
+
+    .state('app.sobreDm', {
+        url: '/sobreDm',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/sobreDm.html'
+            }
+        }
+    })
+
+    .state('app.eventos', {
+        url: '/eventos',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/eventos.html'
+            }
+        }
+    })
+
+    .state('app.redes-sociais', {
+        url: '/redes-sociais',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/redes-sociais.html'
+            }
+        }
+    })
+
+    .state('app.consulta-cid', {
+        url: '/consulta-cid',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/consulta-cid.html'
+            }
+        }
+    })
+
+    .state('app.contato', {
+        url: '/contato',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/contato.html'
             }
         }
     });
+
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/playlists');
+    $urlRouterProvider.otherwise('/app/home');
 });
