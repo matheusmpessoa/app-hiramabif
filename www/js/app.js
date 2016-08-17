@@ -79,6 +79,33 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
     })
 
+    .state('app.reunioes', {
+        url: '/reunioes',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/reunioes.html'
+            }
+        }
+    })
+
+    .state('app.playlistSpotify', {
+        url: '/reunioes/playlistSpotify',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/playlistSpotify.html'
+            }
+        }
+    })
+
+    .state('app.pautaReuniao', {
+        url: '/reunioes/pautaReuniao',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/pautaReuniao.html'
+            }
+        }
+    })
+
     .state('app.eventos', {
         url: '/eventos',
         views: {
