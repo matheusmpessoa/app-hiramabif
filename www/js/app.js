@@ -45,8 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/sobre',
         views: {
             'menuContent': {
-                templateUrl: 'templates/sobre.html',
-                controller: 'SobreCtrl'
+                templateUrl: 'templates/sobre.html'
             }
         }
     })
@@ -101,7 +100,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/reunioes/pautaReuniao',
         views: {
             'menuContent': {
-                templateUrl: 'templates/pautaReuniao.html'
+                templateUrl: 'templates/pautaReuniao.html',
+                controller: 'PautaReuniaoCtrl'
             }
         }
     })
