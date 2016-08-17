@@ -52,7 +52,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     })
 
     .state('app.sobreHa', {
-        url: '/sobreHa',
+        url: '/sobre/sobreHa',
         views: {
             'menuContent': {
                 templateUrl: 'templates/sobreHa.html'
@@ -61,7 +61,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     })
 
     .state('app.conselharia', {
-        url: '/sobreHa/conselharia',
+        url: '/sobre/sobreHa/conselharia',
         views: {
             'menuContent': {
                 templateUrl: 'templates/conselharia.html',
@@ -71,7 +71,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     })
 
     .state('app.sobreDm', {
-        url: '/sobreDm',
+        url: '/sobre/sobreDm',
         views: {
             'menuContent': {
                 templateUrl: 'templates/sobreDm.html'
