@@ -115,11 +115,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
     })
 
-    .state('app.redes-sociais', {
-        url: '/redes-sociais',
+    .state('app.redesSociais', {
+        url: '/redesSociais',
         views: {
             'menuContent': {
-                templateUrl: 'templates/redes-sociais.html'
+                templateUrl: 'templates/redesSociais.html'
             }
         }
     })
