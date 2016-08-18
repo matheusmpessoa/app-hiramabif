@@ -8,13 +8,17 @@ angular.module('starter.controllers', [])
 .controller('PautaReuniaoCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
         $http.get('js/data.json').success(function (data) {
-            $scope.artists = data.artists;
+            $scope.pautas = data.pautas;
         });
 }])
 
-.controller('ConselhariaCtrl', function ($scope) {
+.controller('ConselhariaCtrl', ['$scope', '$http', '$state',
+    function ($scope, $http, $state) {
+        $http.get('js/data.json').success(function (data) {
+            $scope.conselhariaLinhadotempo = data.conselhariaLinhadotempo;
+        });
+}])
 
-})
 
 .controller('SobreHaCtrl', function ($scope, $stateParams) {
 

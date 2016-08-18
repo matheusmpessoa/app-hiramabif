@@ -1,5 +1,5 @@
 {
-    "artists": [
+    "pautas": [
         {
             "mes": "Agosto",
             "dia": "06",
@@ -14,6 +14,29 @@
             "mes": "Agosto",
             "dia": "20",
             "conteudo": "Congresso"
+        }
+    ],
+    "conselhariaLinhadotempo": [
+        {
+            "mestreConselheiro": "Raphael Monte Santo",
+            "primeiroConselheiro": "Frederico Passos Schwanz Filho",
+            "segundoConselheiro": "Felipe de Oliveira Fontes",
+            "ano": "1ºSem/2016",
+            "numGestao": "XXXII"
+        },
+        {
+            "mestreConselheiro": "Nicolau Barbour III",
+            "primeiroConselheiro": "Raphael Monte Santo",
+            "segundoConselheiro": "Frederico Passos Schwanz Filho",
+            "ano": "2ºSem/2015",
+            "numGestao": "XXXI"
+        },
+        {
+            "mestreConselheiro": "Gabriel Henriques",
+            "primeiroConselheiro": "Nicolau Barbour III",
+            "segundoConselheiro": "Frederico Passos Schwanz Filho",
+            "ano": "1ºSem/2015",
+            "numGestao": "XXX"
         }
     ]
 }
