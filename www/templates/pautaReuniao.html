@@ -1,16 +1,10 @@
 <ion-view view-title="Pauta Reunião">
     <ion-content>
         <div class="list">
-            <ion-item class="item-text-wrap" ng-repeat="item in pautas">
-                <div class="item item-divider">
-                    {{item.mes}}
-                </div>
-                <a class="item">
-                    <p><b>Dia {{item.dia}}</b></p>
-                    <p>{{item.conteudo}}</p>
-                </a>
-            </ion-item>
+            <a class="item" ng-repeat="item in pautas">
+                <p><b>Dia: </b>{{item.dia}}</p>
+                <p><b>Pauta: </b>{{item.conteudo}}</p>
+            </a>
         </div>
-        <!-- repeat days -->
     </ion-content>
 </ion-view>
