@@ -1,0 +1,20 @@
+<ion-view view-title="Playlist">
+    <ion-content>
+        <h2>Playlist</h2>
+        <p>Músicas para harmonia DeMolay</p>
+        <div class="list">
+            <a class="item" ng-repeat="item in videos"  ng-model="checked">
+                <div>
+                    <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide"> Show:
+                    <div class="check-element animate-show" ng-show="checked">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                        <div  ng-model="checked">
+                            <p><iframe width="356" height="200" src="https://www.youtube.com/embed/videoseries?list=PL1jyyiH-0loR8mFQefLjHEwO5OWV4k5u-" frameborder="0" allowfullscreen></iframe></p>
+                        </div>
+                    </div>
+                </div>
+                {{item.title}}
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

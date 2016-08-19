@@ -1,0 +1,15 @@
+<ion-view view-title="Login">
+    <ion-content class="padding">
+        <h3>Área restrita</h3>
+        <p>Faça o login para continuar.</p>
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input type="text" placeholder="Usuário" ng-model="data.username">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Senha" ng-model="data.password">
+            </label>
+        </div>
+        <button class="button button-block button-outline button-assertive" ng-click="login()">Login</button>
+    </ion-content>
+</ion-view>

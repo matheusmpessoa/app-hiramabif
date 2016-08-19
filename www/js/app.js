@@ -87,11 +87,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
     })
 
-    .state('app.playlistSpotify', {
-        url: '/reunioes/playlistSpotify',
+    .state('app.playlist', {
+        url: '/reunioes/playlist',
         views: {
             'menuContent': {
-                templateUrl: 'templates/playlistSpotify.html'
+                templateUrl: 'templates/playlist.html',
+                controller: 'PlaylistCtrl'
             }
         }
     })
@@ -138,6 +139,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         views: {
             'menuContent': {
                 templateUrl: 'templates/contato.html'
+            }
+        }
+    })
+
+    .state('app.login', {
+        url: '/login',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/login.html'
             }
         }
     });

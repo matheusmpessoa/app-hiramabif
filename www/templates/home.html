@@ -1,5 +1,31 @@
 <ion-view view-title="Home">
+    <!--<ion-content>
+        <div class="card">
+            <div class="item item-divider">
+                Pauta das reuniões da XXXIII Gestão
+            </div>
+            <div class="item item-text-wrap">
+                Fique por dentro de toda a programação de nossas próximas reunioes!
+            </div>
+            <div class="item item-divider">
+                <a href="#/app/login">
+                    <button class="button button-small button-outline button-assertive">
+                        <i class="icon ion-document-text"></i> Veja mais
+                    </button>
+                </a>
+            </div>
+        </div>
+    </ion-content>-->
+    <ion-header-bar class="top">
+        <h1 class="title">Items</h1>
+        <button class="button button-icon ion-plus" ng-click="addItem()">
+        </button>
+    </ion-header-bar>
     <ion-content>
-        <h1>Home</h1>
+        <ion-list>
+            <ion-item ng-repeat="item in items">
+                {{item.name}}
+            </ion-item>
+        </ion-list>
     </ion-content>
 </ion-view>
