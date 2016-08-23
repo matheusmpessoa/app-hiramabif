@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/sobre',
         views: {
             'menuContent': {
-                templateUrl: 'templates/sobre.html'
+                templateUrl: 'templates/sobre/sobre.html'
             }
         }
     })
@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/sobre/sobreHa',
         views: {
             'menuContent': {
-                templateUrl: 'templates/sobreHa.html'
+                templateUrl: 'templates/sobre/sobreHa.html'
             }
         }
     })
@@ -63,7 +63,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/sobre/sobreHa/conselharia',
         views: {
             'menuContent': {
-                templateUrl: 'templates/conselharia.html',
+                templateUrl: 'templates/sobre/conselharia.html',
                 controller: 'ConselhariaCtrl'
             }
         }
@@ -73,7 +73,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/sobre/sobreDm',
         views: {
             'menuContent': {
-                templateUrl: 'templates/sobreDm.html'
+                templateUrl: 'templates/sobre/sobreDm.html'
             }
         }
     })
@@ -82,7 +82,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/reunioes',
         views: {
             'menuContent': {
-                templateUrl: 'templates/reunioes.html',
+                templateUrl: 'templates/reuniao/reunioes.html',
                 controller: 'ReuniaoCtrl'
             }
         }
@@ -92,7 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/reunioes/playlist',
         views: {
             'menuContent': {
-                templateUrl: 'templates/playlist.html',
+                templateUrl: 'templates/reuniao/playlist.html',
                 controller: 'PlaylistCtrl'
             }
         }
@@ -102,7 +102,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/reunioes/pautaReuniao',
         views: {
             'menuContent': {
-                templateUrl: 'templates/pautaReuniao.html',
+                templateUrl: 'templates/reuniao/pautaReuniao.html',
                 controller: 'PautaReuniaoCtrl'
             }
         }
