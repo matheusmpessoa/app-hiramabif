@@ -1,20 +1,20 @@
 <ion-view view-title="Playlist">
     <ion-content>
-        <h2>Playlist</h2>
-        <p>Músicas para harmonia DeMolay</p>
         <div class="list">
-            <a class="item" ng-repeat="item in videos"  ng-model="checked">
-                <div>
-                    <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide"> Show:
-                    <div class="check-element animate-show" ng-show="checked">
-                        <span class="glyphicon glyphicon-thumbs-up"></span>
-                        <div  ng-model="checked">
-                            <p><iframe width="356" height="200" src="https://www.youtube.com/embed/videoseries?list=PL1jyyiH-0loR8mFQefLjHEwO5OWV4k5u-" frameborder="0" allowfullscreen></iframe></p>
-                        </div>
-                    </div>
+            <span class="item" ng-click="show = !show" ng-repeat="item in videos">
+               {{item.title}}
+                <div class="procedure-details" ng-show="show">
+                    <p><a href="{{item.url}}">{{item.url}}</a></p>
                 </div>
-                {{item.title}}
-            </a>
+            </span>
         </div>
+
+        <!-- Video via VIMEO
+        <video controls="controls" preload="metadata" autoplay="autoplay" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="200" height="150">
+            <source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
+        </video> -->
+        <iframe src="https://player.vimeo.com/video/64036312?portrait=0" width="300" height="169" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe width="350" height="200" src="https://www.youtube.com/embed/rhzmNRtIp8k" frameborder="0" allowfullscreen></iframe>
     </ion-content>
+
 </ion-view>

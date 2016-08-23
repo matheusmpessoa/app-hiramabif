@@ -16,12 +16,6 @@ angular.module('starter.controllers', [])
         $http.get('js/dados/videos.json').success(function (data) {
             $scope.videos = data.videos;
         });
-
-        //Toggle
-        $scope.custom = true;
-        $scope.toggleCustom = function () {
-            $scope.custom = $scope.custom === false ? true : false;
-        };
 }])
 
 .controller('ConselhariaCtrl', ['$scope', '$http', '$state',
