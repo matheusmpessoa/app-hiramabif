@@ -9,7 +9,7 @@
             <div class="item item-body">
                 <p>Pauta com conteúdo da reunião da atual gestão DeMolay.</p>
                 <p>
-                    <a href="#/app/login" class="subdued"><i class="icon ion-calendar"></i> Pauta da reunião</a>
+                    <a ng-click="modal.show()" class="subdued"><i class="icon ion-calendar"></i> Pauta da reunião</a>
                 </p>
             </div>
         </ion-item>
@@ -27,4 +27,25 @@
             </div>
         </ion-item>
     </ion-content>
+    <script id="templates/modal.html" type="text/ng-template">
+        <ion-modal-view>
+            <ion-header-bar class="bar bar-header bar-assertive">
+                <h1 class="title">Login</h1>
+                <button class="button  button-small button-clear button-primary" ng-click="modal.hide()"><i class="icon ion-close"></i></button>
+            </ion-header-bar>
+            <ion-content class="padding">
+                <h3>Área restrita</h3>
+                <p>Faça o login para continuar.</p>
+                <div class="list list-inset">
+                    <label class="item item-input">
+                        <input type="text" placeholder="Usuário" ng-model="data.username">
+                    </label>
+                    <label class="item item-input">
+                        <input type="password" placeholder="Senha" ng-model="data.password">
+                    </label>
+                </div>
+                <button class="button button-block button-outline button-assertive" ng-click="login()">Login</button>
+            </ion-content>
+        </ion-modal-view>
+    </script>
 </ion-view>

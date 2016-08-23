@@ -82,7 +82,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/reunioes',
         views: {
             'menuContent': {
-                templateUrl: 'templates/reunioes.html'
+                templateUrl: 'templates/reunioes.html',
+                controller: 'ReuniaoCtrl'
             }
         }
     })
@@ -111,7 +112,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/eventos',
         views: {
             'menuContent': {
-                templateUrl: 'templates/eventos.html'
+                templateUrl: 'templates/eventos.html',
+                controller: 'EventosCtrl'
             }
         }
     })
@@ -139,15 +141,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         views: {
             'menuContent': {
                 templateUrl: 'templates/contato.html'
-            }
-        }
-    })
-
-    .state('app.login', {
-        url: '/login',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/login.html'
             }
         }
     });

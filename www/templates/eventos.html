@@ -32,7 +32,30 @@
                     <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
                 </div>
             </div>
+            <div class="item item-body">
+                <p>*Aguarde até todos os itens serem carregados.</p>
+                <p style="float:rigth;">
+                    <a ng-click="modal.show()" class="subdued"><i class="icon ion-information-circled"></i> Informações</a>
+                </p>
+            </div>
         </div>
-        <p>*Aguarde toda a página ser carregada para visualizar todos os itens.</p>
     </ion-content>
+    <script id="templates/modal.html" type="text/ng-template">
+        <ion-modal-view>
+            <ion-header-bar class="bar bar-header bar-assertive">
+                <h1 class="title">Informações</h1>
+                <button class="button  button-small button-clear button-primary" ng-click="modal.hide()"><i class="icon ion-close"></i></button>
+            </ion-header-bar>
+            <ion-content class="padding">
+                <div class="card">
+                    <div class="item item-text-wrap">
+                        Ao comprar seu convite via PagSeguro guarde o seu comprovante de pagamento.
+                    </div>
+                    <div class="item item-text-wrap">
+                        Ao comprar seu convite via PagSeguro guarde o seu comprovante de pagamento.
+                    </div>
+                </div>
+            </ion-content>
+        </ion-modal-view>
+    </script>
 </ion-view>

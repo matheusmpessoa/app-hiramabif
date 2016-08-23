@@ -34,4 +34,24 @@ angular.module('starter.controllers', [])
 
 .controller('SobreHaCtrl', function ($scope, $stateParams) {
 
+})
+
+.controller('ReuniaoCtrl', function ($scope, $ionicModal) {
+
+    $ionicModal.fromTemplateUrl('templates/modal.html', {
+        scope: $scope
+    }).then(function (modal) {
+        $scope.modal = modal;
+    });
+
+})
+
+.controller('EventosCtrl', function ($scope, $ionicModal) {
+
+    $ionicModal.fromTemplateUrl('templates/modal.html', {
+        scope: $scope
+    }).then(function (modal) {
+        $scope.modal = modal;
+    });
+
 });
