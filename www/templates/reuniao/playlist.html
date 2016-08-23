@@ -1,20 +1,41 @@
 <ion-view view-title="Playlist">
     <ion-content>
+
+        <div class="divider-title">Hinos</div>
         <div class="list">
-            <span class="item" ng-click="show = !show" ng-repeat="item in videos">
+            <span class="item" ng-click="show = !show" ng-repeat="item in hino">
                {{item.title}}
-                <div class="procedure-details" ng-show="show">
-                    <p><a href="{{item.url}}">{{item.url}}</a></p>
+                <div ng-show="show">
+                    <div style="padding-top:10px;">
+                        <iframe width="300" height="190" ng-src="{{item.url | FilterPlaylist}}" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </span>
         </div>
+        <div class="divider-title">Harmonia</div>
+        <div class="list">
+            <span class="item" ng-click="show = !show" ng-repeat="item in harmonia">
+               {{item.title}}
+                <div ng-show="show">
+                    <div style="padding-top:10px;">
+                        <iframe width="300" height="190" ng-src="{{item.url | FilterPlaylist}}" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <ion-item class="list card">
+            <div class="item item-avatar">
+                <img src="img/logo-youtube.png">
+                <h2><b>Canal do Youtube</b></h2>
+            </div>
 
-        <!-- Video via VIMEO
-        <video controls="controls" preload="metadata" autoplay="autoplay" webkit-playsinline="webkit-playsinline" class="videoPlayer" width="200" height="150">
-            <source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
-        </video> -->
-        <iframe src="https://player.vimeo.com/video/64036312?portrait=0" width="300" height="169" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        <iframe width="350" height="200" src="https://www.youtube.com/embed/rhzmNRtIp8k" frameborder="0" allowfullscreen></iframe>
+            <div class="item item-body">
+                <p>Canal do Youtube que contém toda a playlist contida aqui no app!</p>
+            </div>
+
+            <a class="item item-icon-left assertive" href="https://www.youtube.com/playlist?list=PL1jyyiH-0loR8mFQefLjHEwO5OWV4k5u-">
+                <i class="icon ion-chatbox-working"></i> Veja mais
+            </a>
+        </ion-item>
     </ion-content>
-
 </ion-view>

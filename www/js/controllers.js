@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ngSanitize'])
 
 .controller('MenuCtrl', function ($scope, $ionicModal, $timeout) {
 
@@ -13,8 +13,9 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-        $http.get('js/dados/videos.json').success(function (data) {
-            $scope.videos = data.videos;
+        $http.get('js/dados/playlist.json').success(function (data) {
+            $scope.hino = data.hino;
+            $scope.harmonia = data.harmonia;
         });
 }])
 
@@ -48,4 +49,11 @@ angular.module('starter.controllers', [])
         $scope.modal = modal;
     });
 
-});
+})
+
+.filter('FilterPlaylist', ['$sce', function ($sce) {
+    return function (url) {
+        var video_id = url.split('v=')[1].split('&')[0];
+        return $sce.trustAsResourceUrl("https://www.youtube.com/embed/" + video_id);
+    };
+}]);
