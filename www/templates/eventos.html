@@ -17,19 +17,22 @@
                 <img src="img/evento.jpg">
             </div>
 
-            <a class="item item-icon-left assertive">
+            <div class="item item-icon-left assertive">
                 <div style="float:left;">
                     <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1627559294201256%2F&layout=button&size=large&mobile_iframe=true&width=117&height=28&appId" width="117" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                 </div>
-                <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-                <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post">
-                    <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-                    <input type="hidden" name="itemCode" value="323371B82D2D0C0FF4B00FB7332C92F7" />
-                    <input type="hidden" name="iot" value="button" />
-                    <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-                </form>
-                <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-            </a>
+                <div>
+                    <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                    <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post">
+                        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                        <input type="hidden" name="itemCode" value="323371B82D2D0C0FF4B00FB7332C92F7" />
+                        <input type="hidden" name="iot" value="button" />
+                        <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                    </form>
+                    <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+                </div>
+            </div>
         </div>
+        <p>*Aguarde toda a página ser carregada para visualizar todos os itens.</p>
     </ion-content>
 </ion-view>
