@@ -143,6 +143,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngSanitize'])
                 templateUrl: 'templates/contato.html'
             }
         }
+    })
+
+    .state('app.login', {
+        url: '/login',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/login.html',
+                controller: 'LoginCtrl'
+            }
+        }
     });
 
     // if none of the above states are matched, use this as the fallback
