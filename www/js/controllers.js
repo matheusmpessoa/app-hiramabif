@@ -59,40 +59,9 @@ angular.module('starter.controllers', ['ngSanitize'])
             $state.go('app.pautaReuniao');
         }).error(function (data) {
             var alertPopup = $ionicPopup.alert({
-                title: 'Login failed!',
-                template: 'Please check your credentials!'
+                title: 'Erro',
+                template: 'Usuário e senha incorretos. Tente novamente'
             });
         });
     }
-})
-
-.service('LoginService', function ($q) {
-    return {
-        loginUser: function (name, pw) {
-            var deferred = $q.defer();
-            var promise = deferred.promise;
-
-            if (name == 'user' && pw == 'secret') {
-                deferred.resolve('Welcome ' + name + '!');
-            } else {
-                deferred.reject('Wrong credentials.');
-            }
-            promise.success = function (fn) {
-                promise.then(fn);
-                return promise;
-            }
-            promise.error = function (fn) {
-                promise.then(null, fn);
-                return promise;
-            }
-            return promise;
-        }
-    }
-})
-
-.filter('FilterPlaylist', ['$sce', function ($sce) {
-    return function (url) {
-        var video_id = url.split('v=')[1].split('&')[0];
-        return $sce.trustAsResourceUrl("https://www.youtube.com/embed/" + video_id);
-    };
-}]);
+});
