@@ -56,7 +56,7 @@ angular.module('starter.controllers', ['ngSanitize'])
 
     $scope.login = function () {
         LoginService.loginUser($scope.data.username, $scope.data.password).success(function (data) {
-            $state.go('app.pautaReuniao');
+            $state.go('app.arearestrita');
         }).error(function (data) {
             var alertPopup = $ionicPopup.alert({
                 title: 'Erro',

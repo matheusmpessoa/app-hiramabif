@@ -78,32 +78,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.service', 's
         }
     })
 
-    .state('app.reunioes', {
-        url: '/reunioes',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/reuniao/reunioes.html',
-                controller: 'ReuniaoCtrl'
-            }
-        }
-    })
-
     .state('app.playlist', {
-        url: '/reunioes/playlist',
+        url: '/playlist',
         views: {
             'menuContent': {
-                templateUrl: 'templates/reuniao/playlist.html',
+                templateUrl: 'templates/playlist.html',
                 controller: 'PlaylistCtrl'
-            }
-        }
-    })
-
-    .state('app.pautaReuniao', {
-        url: '/reunioes/pautaReuniao',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/reuniao/pautaReuniao.html',
-                controller: 'PautaReuniaoCtrl'
             }
         }
     })
@@ -151,6 +131,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.service', 's
             'menuContent': {
                 templateUrl: 'templates/login.html',
                 controller: 'LoginCtrl'
+            }
+        }
+    })
+
+    .state('app.arearestrita', {
+        url: '/arearestrita',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/arearestrita/arearestrita.html'
+            }
+        }
+    })
+
+    .state('app.pautaReuniao', {
+        url: '/pautaReuniao',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/arearestrita/pautaReuniao.html',
+                controller: 'PautaReuniaoCtrl'
             }
         }
     });
