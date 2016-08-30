@@ -107,15 +107,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.service', 's
         }
     })
 
-    .state('app.consulta-cid', {
-        url: '/consulta-cid',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/consulta-cid.html'
-            }
-        }
-    })
-
     .state('app.contato', {
         url: '/contato',
         views: {
@@ -156,10 +147,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.service', 's
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/home');
-});
+})
 
 
-app.config(function ($sceDelegateProvider) {
+.config(function ($sceDelegateProvider) {
     $sceDelegateProvider.resourceUrlWhitelist([
     'self',
     'https://www.youtube.com/**'
