@@ -1,0 +1,21 @@
+<ion-view view-title="Estatísticas H.A.">
+    <ion-content>
+        <h1>Estatisticas</h1>
+        <div class="divider-title">Gestão atual</div>
+        <ul class="timeline">
+            <li ng-repeat="item in estatisticasCapitulo">
+                <div class="timeline-thumb bg-color-blue timeline-icon">
+                    <i class="ion-person"></i>
+                </div>
+                <div class="timeline-item">
+                    <h4>{{item.ano}}</h4>
+                    <h5>{{item.quantidade}}</h5>
+                    <div class="timeline-stats">
+                        <i class="ion-calendar"></i> {{item.ano}}
+                        <span class="pos-absolute-right"><i class="ion-document-text"></i> {{item.numGestao}} Gestão</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

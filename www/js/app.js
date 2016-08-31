@@ -69,6 +69,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.service', 's
         }
     })
 
+    .state('app.estatisticasCapitulo', {
+        url: '/sobre/sobreHa/estatisticasCapitulo',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/sobre/estatisticasCapitulo.html',
+                controller: 'EstatisticasCapituloCtrl'
+            }
+        }
+    })
+
     .state('app.sobreDm', {
         url: '/sobre/sobreDm',
         views: {
@@ -136,11 +146,31 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.service', 's
     })
 
     .state('app.pautaReuniao', {
-        url: '/pautaReuniao',
+        url: '/arearestrita/pautaReuniao',
         views: {
             'menuContent': {
                 templateUrl: 'templates/arearestrita/pautaReuniao.html',
                 controller: 'PautaReuniaoCtrl'
+            }
+        }
+    })
+
+    .state('app.estatisticasMembros', {
+        url: '/arearestrita/estatisticasMembros',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/arearestrita/estatisticasMembros.html',
+                controller: 'EstatisticasMembrosCtrl'
+            }
+        }
+    })
+
+    .state('app.agendaContatos', {
+        url: '/arearestrita/agendaContatos',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/arearestrita/agendaContatos.html',
+                controller: 'AgendaContatosCtrl'
             }
         }
     });

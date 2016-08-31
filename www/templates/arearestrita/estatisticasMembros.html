@@ -1,0 +1,20 @@
+<ion-view view-title="Estatisticas Membros H.A.">
+    <ion-content>
+        <div class="divider-title">Estatisticas</div>
+        <ul class="timeline">
+            <li ng-repeat="item in estatisticasMembros">
+                <div class="timeline-thumb bg-color-blue timeline-icon">
+                    <h5> {{item.ano}} </h5>
+                </div>
+                <div class="timeline-item">
+                    <h5>Iniciação:</h5>
+                        <p>{{item.iniciacao}}</p>
+                    <h5>Elevação:</h5>
+                        <p>{{item.elevacao}}</p>
+                    <h5>Regularização: </h5>
+                        <p>{{item.regularizacao}}</p>
+                </div>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

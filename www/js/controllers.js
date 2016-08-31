@@ -19,6 +19,10 @@ angular.module('starter.controllers', ['ngSanitize'])
         });
 }])
 
+.controller('SobreHaCtrl', function ($scope, $stateParams) {
+
+})
+
 .controller('ConselhariaCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
         $http.get('js/dados/conselharia.json').success(function (data) {
@@ -26,10 +30,26 @@ angular.module('starter.controllers', ['ngSanitize'])
         });
 }])
 
+.controller('EstatisticasCapituloCtrl', ['$scope', '$http', '$state',
+    function ($scope, $http, $state) {
+        $http.get('js/dados/estatisticas.json').success(function (data) {
+            $scope.estatisticasCapitulo = data.estatisticasCapitulo;
+        });
+}])
 
-.controller('SobreHaCtrl', function ($scope, $stateParams) {
+.controller('EstatisticasMembrosCtrl', ['$scope', '$http', '$state',
+    function ($scope, $http, $state) {
+        $http.get('js/dados/membros.json').success(function (data) {
+            $scope.estatisticasMembros = data.estatisticasMembros;
+        });
+}])
 
-})
+.controller('AgendaContatosCtrl', ['$scope', '$http', '$state',
+    function ($scope, $http, $state) {
+        $http.get('js/dados/contatos.json').success(function (data) {
+            $scope.contatos = data.contatos;
+        });
+}])
 
 .controller('ReuniaoCtrl', function ($scope, $ionicModal) {
 
