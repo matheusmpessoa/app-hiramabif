@@ -1,45 +1,77 @@
 {
     "estatisticasMembros": [
         {
-            "ano": "1999",
+            "ano": "2016",
             "iniciacao": "11",
-            "elevacao": "11",
-            "regularizacao": "11"
+            "elevacao": "7"
+        }, {
+            "ano": "2015",
+            "iniciacao": "12",
+            "elevacao": "9"
+        }, {
+            "ano": "2014",
+            "iniciacao": "19",
+            "elevacao": "8"
+        }, {
+            "ano": "2013",
+            "iniciacao": "11",
+            "elevacao": "11"
+        }, {
+            "ano": "2012",
+            "iniciacao": "19",
+            "elevacao": "18"
+        }, {
+            "ano": "2011",
+            "iniciacao": "26",
+            "elevacao": "11"
+        }, {
+            "ano": "2010",
+            "iniciacao": "14",
+            "elevacao": "12"
+        }, {
+            "ano": "2009",
+            "iniciacao": "12",
+            "elevacao": "17"
+        }, {
+            "ano": "2008",
+            "iniciacao": "19",
+            "elevacao": "12"
+        }, {
+            "ano": "2007",
+            "iniciacao": "10",
+            "elevacao": "13"
+        }, {
+            "ano": "2006",
+            "iniciacao": "8",
+            "elevacao": "4"
+        }, {
+            "ano": "2005",
+            "iniciacao": "3",
+            "elevacao": "11"
+        }, {
+            "ano": "2004",
+            "iniciacao": "2",
+            "elevacao": "3"
+        }, {
+            "ano": "2003",
+            "iniciacao": "2",
+            "elevacao": "3"
+        }, {
+            "ano": "2002",
+            "iniciacao": "4",
+            "elevacao": "9"
+        }, {
+            "ano": "2001",
+            "iniciacao": "11",
+            "elevacao": "6"
+        }, {
+            "ano": "2000",
+            "iniciacao": "21",
+            "elevacao": "26"
         }, {
             "ano": "1999",
             "iniciacao": "11",
-            "elevacao": "11",
-            "regularizacao": "11"
-        }, {
-            "ano": "1999",
-            "iniciacao": "11",
-            "elevacao": "11",
-            "regularizacao": "11"
-        }, {
-            "ano": "1999",
-            "iniciacao": "11",
-            "elevacao": "11",
-            "regularizacao": "11"
-        }, {
-            "ano": "1999",
-            "iniciacao": "11",
-            "elevacao": "11",
-            "regularizacao": "11"
-        }, {
-            "ano": "1999",
-            "iniciacao": "11",
-            "elevacao": "11",
-            "regularizacao": "11"
-        }, {
-            "ano": "1999",
-            "iniciacao": "11",
-            "elevacao": "11",
-            "regularizacao": "11"
-        }, {
-            "ano": "1999",
-            "iniciacao": "11",
-            "elevacao": "11",
-            "regularizacao": "11"
+            "elevacao": "-"
         }
     ]
 }

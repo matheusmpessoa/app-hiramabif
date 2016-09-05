@@ -4,6 +4,22 @@ ion-content {
     font-family: 'Asap', sans-serif;
 }
 
+/* TABLE ESTATISTICAS MEMBROS */
+.col {
+    border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+}
+
+.col:last-child {
+    border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+    border-bottom: solid 1px grey;
+}
+
+
 /* LINHA DO TEMPO CONSELHARIA */
 .pos-absolute-right {
     position: absolute;
@@ -120,6 +136,10 @@ ion-content {
 
 .bg-color-blue {
     background-color: #007aff !important;
+}
+
+.bg-color-darkseagreen {
+    background-color: darkseagreen !important;
 }
 
 .color-lightblue {

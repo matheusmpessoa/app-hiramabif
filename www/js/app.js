@@ -69,16 +69,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.service', 's
         }
     })
 
-    .state('app.estatisticasCapitulo', {
-        url: '/sobre/sobreHa/estatisticasCapitulo',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/sobre/estatisticasCapitulo.html',
-                controller: 'EstatisticasCapituloCtrl'
-            }
-        }
-    })
-
     .state('app.sobreDm', {
         url: '/sobre/sobreDm',
         views: {
