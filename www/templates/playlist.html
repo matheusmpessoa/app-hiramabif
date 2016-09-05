@@ -1,28 +1,6 @@
-<ion-view view-title="Playlist">
+<ion-view view-title="Playlist e DeMoPlay">
     <ion-content>
 
-        <div class="divider-title">Hinos</div>
-        <div class="list">
-            <span class="item" ng-click="show = !show" ng-repeat="item in hino">
-               {{item.title}}
-                <div ng-show="show">
-                    <div style="padding-top:10px;">
-                        <iframe width="300" height="190" ng-src="{{item.url | FilterPlaylist}}" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </span>
-        </div>
-        <div class="divider-title">Harmonia</div>
-        <div class="list">
-            <span class="item" ng-click="show = !show" ng-repeat="item in harmonia">
-               {{item.title}}
-                <div ng-show="show">
-                    <div style="padding-top:10px;">
-                        <iframe width="300" height="190" ng-src="{{item.url | FilterPlaylist}}" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </span>
-        </div>
         <ion-item class="list card">
             <div class="item item-avatar">
                 <img src="img/logo-youtube.png">
@@ -30,12 +8,53 @@
             </div>
 
             <div class="item item-body">
-                <p>Confira aqui o canal do Youtube com todas as playlists criadas!!!</p>
+                <p>Confira aqui o canal do Youtube que contém todas as playlists criadas para uma harmonia DeMolay!!!</p>
+
+                <div class="divider-title">Hinos</div>
+                <div class="list">
+                    <span class="item" ng-click="show = !show" ng-repeat="item in hino">
+                        {{item.title}}
+                        <div ng-show="show">
+                            <div style="padding-top:10px;">
+                                <iframe width="300" height="190" ng-src="{{item.url | FilterPlaylist}}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="divider-title">Harmonia</div>
+                <div class="list">
+                    <span class="item" ng-click="show = !show" ng-repeat="item in harmonia">
+                        {{item.title}}
+                        <div ng-show="show">
+                            <div style="padding-top:10px;">
+                                <iframe width="300" height="190" ng-src="{{item.url | FilterPlaylist}}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="item item-body">
                 <p>
-                    <a href="https://www.youtube.com/channel/UCAWlwPvsV2LsRaoq1PcnheQ" class="subdued"><i class="icon ion-music-note" style="color:#F00;"> Ir para canal</i></a>
+                    <a href="https://www.youtube.com/channel/UCAWlwPvsV2LsRaoq1PcnheQ" class="subdued"><i class="icon ion-music-note" style="color:#F00;"> Ir para canal H.A.</i></a>
                 </p>
                 <p>
                     <a href="https://www.youtube.com/channel/UCAWlwPvsV2LsRaoq1PcnheQ/playlists?view=1&shelf_id=0&sort=dd" class="subdued"><i class="icon ion-music-note" style="color:#F00;"> Ir para playlists</i></a>
+                </p>
+            </div>
+        </ion-item>
+        <ion-item class="list card">
+            <div class="item item-avatar">
+                <img src="img/logo-demoplay.jpg">
+                <h2><b>DeMoPlay</b></h2>
+            </div>
+
+            <div class="item item-body">
+                <p>O DeMoPlay foi criado pela Secretaria Nacional de Ritualistica que traz essa compilação de músicas como mais uma ferramenta para usufruirem de maneira simplória e eficiente.</p>
+                <p>
+                    <a href="https://drive.google.com/drive/folders/0B149hXxvjNviZE9wa1hOZkhWc1E" class="subdued"><i class="icon ion-folder" style="color:#F00;"> Ir para Google Drive</i></a>
+                </p>
+                <p>
+                    <a href="https://play.spotify.com/user/gnlj_scodb" class="subdued"><i class="icon ion-music-note" style="color:#F00;"> Ir para Spotify</i></a>
                 </p>
             </div>
         </ion-item>

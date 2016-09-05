@@ -30,13 +30,6 @@ angular.module('starter.controllers', ['ngSanitize'])
         });
 }])
 
-.controller('EstatisticasCapituloCtrl', ['$scope', '$http', '$state',
-    function ($scope, $http, $state) {
-        $http.get('js/dados/estatisticas.json').success(function (data) {
-            $scope.estatisticasCapitulo = data.estatisticasCapitulo;
-        });
-}])
-
 .controller('EstatisticasMembrosCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
         $http.get('js/dados/membros.json').success(function (data) {
