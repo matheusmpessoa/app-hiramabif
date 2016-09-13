@@ -4,6 +4,15 @@ ion-content {
     font-family: 'Asap', sans-serif;
 }
 
+/* Alinhamento de textos justificados */
+.justificar {
+    text-align: justify;
+}
+
+.sublinhar{
+    text-decoration: underline;
+}
+
 /* TABLE ESTATISTICAS MEMBROS */
 .col {
     border: solid 1px grey;
