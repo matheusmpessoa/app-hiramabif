@@ -40,7 +40,12 @@ angular.module('starter.controllers', ['ngSanitize'])
 .controller('AgendaContatosCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
         $http.get('js/dados/contatos.json').success(function (data) {
-            $scope.contatos = data.contatos;
+            //Carregando membros
+            $scope.membros = data.membros;
+            //Carregando tios
+            $scope.tios = data.tios;
+            //Carregando imagem
+            $scope.whichartist = $state.params.aId;
         });
 }])
 

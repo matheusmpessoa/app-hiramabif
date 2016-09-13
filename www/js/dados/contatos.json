@@ -1,29 +1,52 @@
 {
-    "contatos": [
+    "membros": [
         {
-            "nome": "1999",
-            "telefone": "11"
+            "shortname": "Dave_Grohl",
+            "name": "Dave Grohl",
+            "telefone": "Foo Fighters"
+    }, {
+            "shortname": "Bono",
+            "name": "Bono",
+            "telefone": "U2"
+    }, {
+            "shortname": "Lars_Ulrich",
+            "name": "Lars Ulrich",
+            "telefone": "Metallica"
+    }, {
+            "shortname": "Chester_Bennington",
+            "name": "Chester Bennington",
+            "telefone": "Linkin Park"
+    }, {
+            "shortname": "Anthony_Kiedis",
+            "name": "Anthony Kiedis",
+            "telefone": "Red Hot Chili Peppers"
+    }, {
+            "shortname": "Dexter_Holland",
+            "name": "Dexter Holland",
+            "telefone": "The Offspring"
+    }, {
+            "shortname": "Eddie_Vedder",
+            "name": "Eddie Vedder",
+            "telefone": "Pearl Jam"
+    }, {
+            "shortname": "Angus_Young",
+            "name": "Angus Young",
+            "telefone": "AC/DC"
+    }, {
+            "shortname": "Ozzy_Osbourne",
+            "name": "Ozzy Osbourne",
+            "telefone": "Black Sabbath"
+    }
+  ],
+    "tios": [
+        {
+            "shortname": "Dave_Grohl",
+            "name": "Tio dave",
+            "telefone": "Foo Fighters"
         }, {
-            "nome": "1999",
-            "telefone": "11"
-        }, {
-            "nome": "1999",
-            "telefone": "11"
-        }, {
-            "nome": "1999",
-            "telefone": "11"
-        }, {
-            "nome": "1999",
-            "telefone": "11"
-        }, {
-            "nome": "1999",
-            "telefone": "11"
-        }, {
-            "nome": "1999",
-            "telefone": "11"
-        }, {
-            "nome": "1999",
-            "telefone": "11"
+            "shortname": "Bono",
+            "name": "tio Bono",
+            "telefone": "U2"
         }
     ]
 }

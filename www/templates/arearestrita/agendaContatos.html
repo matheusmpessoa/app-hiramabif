@@ -1,10 +1,26 @@
-<ion-view view-title="Agenda de contatos">
+<ion-view view-title="Agenda de Contatos">
     <ion-content>
-        <div class="list">
-            <a class="item" ng-repeat="item in contatos">
-                <p><b>Nome: </b>{{item.nome}}</p>
-                <p><b>Telefone: </b>{{item.telefone}}</p>
-            </a>
+        <div class="item-input-inset bar-light">
+            <label class="item-input-wrapper">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" ng-model="query" placeholder="Pesquisar membro">
+            </label>
         </div>
+        <div class="divider-title">Irmãos</div>
+        <ion-list>
+            <ion-item ng-repeat='item in membros | filter: query' class="item-thumbnail-left item-icon-right item-text-wrap">
+                <img ng-src="img/contatos/{{item.shortname}}.jpg" alt="{{ item.name }} Foto">
+                <p>{{item.name}}</p>
+                <p>{{item.telefone}}</p>
+            </ion-item>
+        </ion-list>
+        <div class="divider-title">Tios Maçons</div>
+        <ion-list>
+            <ion-item ng-repeat='item in tios | filter: query' class="item-thumbnail-left item-icon-right item-text-wrap">
+                <img ng-src="img/contatos/{{item.shortname}}.jpg" alt="{{ item.name }} Foto">
+                <p>{{item.name}}</p>
+                <p>{{item.telefone}}</p>
+            </ion-item>
+        </ion-list>
     </ion-content>
 </ion-view>
