@@ -6,21 +6,25 @@
                 <input type="search" ng-model="query" placeholder="Pesquisar membro">
             </label>
         </div>
-        <div class="divider-title">Irmãos</div>
-        <ion-list>
-            <ion-item ng-repeat='item in membros | filter: query' class="item-thumbnail-left item-icon-right item-text-wrap">
-                <img ng-src="img/contatos/{{item.shortname}}.jpg" alt="{{ item.name }} Foto">
-                <p>{{item.name}}</p>
-                <p>{{item.telefone}}</p>
-            </ion-item>
-        </ion-list>
-        <div class="divider-title">Tios Maçons</div>
-        <ion-list>
-            <ion-item ng-repeat='item in tios | filter: query' class="item-thumbnail-left item-icon-right item-text-wrap">
-                <img ng-src="img/contatos/{{item.shortname}}.jpg" alt="{{ item.name }} Foto">
-                <p>{{item.name}}</p>
-                <p>{{item.telefone}}</p>
-            </ion-item>
-        </ion-list>
+
+        <div class="day" ng-repeat="(dayIndex, day) in contatos">
+            <!-- item divider -->
+            <div class="item item-divider item-divider-calm">
+                {{day.letra}}
+            </div>
+
+            <ion-list>
+                <ion-item ng-class="{'item-avatar':item.shortname}" class="item-thumbnail-left item-icon-right" ng-repeat="item in day.schedule | filter: query">
+
+                    <img ng-src="img/contatos/{{item.shortname}}.jpg" alt="{{ item.nome }} Foto">
+                    <p>{{item.nome}}</p>
+                    <p>{{item.title}}</p>
+
+                    <ion-option-button class="button-energized">
+                        <i class="icon ion-clipboard"></i>
+                    </ion-option-button>
+                </ion-item>
+            </ion-list>
+        </div>
     </ion-content>
 </ion-view>
